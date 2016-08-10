@@ -1,0 +1,48 @@
+/* Sophie Minet
+ *
+ * /sass/objects/_contact.scss - Non Esthetic style for contact section
+ *
+ * coded by Mathieu Claessens
+ */
+
+.contact{
+    &__wrap{
+        width: 40%; // 320/800*100
+    }
+    &__form{
+        width: 50%; // 400/800*100
+    }
+    &__fieldset{
+        margin-bottom: 1em;
+    }
+    &__input, &__textarea{
+        width: $twelveCol;
+        margin: 0;
+    }
+    &__submit{
+        width: $twelveCol;
+    }
+}
+
+// ===== media query =====
+
+@media all and (max-width: 810px) {
+    .contact{
+        &__wrap{
+            width: 100%;
+            margin-bottom: 4.444444444em; // 80px
+        }
+        &__form{
+            width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 610px) {
+    .contact{
+        &__wrap{
+            width: auto;
+            margin-bottom: 4.444444444em; // 80px
+        }
+    }
+}

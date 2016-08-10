@@ -1,0 +1,19 @@
+/* Sophie Minet
+ *
+ * /sass/components/_footer.scss - Esthetic style for footer elements
+ *
+ * coded by Mathieu Claessens
+ */
+
+.footer{
+    text-align: center;
+    padding: 0 $oneCol;
+    &__copy{
+        font-size: 12px;
+        font-family: $openSansStack;
+        color: $copyColor;
+    }
+    &__copy-link{
+        color: $copyColor;
+    }
+}

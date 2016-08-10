@@ -1,0 +1,571 @@
+@charset "UTF-8";
+/* Sophie Minet
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Mathieu Claessens
+ */
+/* => Nom du site
+ *
+ * /sass/settings/_paths.scss - Global paths variables
+ *
+ * coded by Mucht
+ */
+/* => Nom du site
+ *
+ * /sass/settings/_colors.scss - Global colors variables
+ *
+ * coded by Mucht
+ */
+/*---------------------------------------*/
+/*--------------- Colors ----------------*/
+/*---------------------------------------*/
+/*---------------------------------------*/
+/*------------ Backgrounds --------------*/
+/*---------------------------------------*/
+/*---------------------------------------*/
+/*------------ Text colors --------------*/
+/*---------------------------------------*/
+/*---------------------------------------*/
+/*---------- element colors -------------*/
+/*---------------------------------------*/
+/* => Nom du site
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by Mucht
+ */
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-regular-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-regular-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-regular-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-regular-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-italic-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-italic-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-italic-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-italic-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-semibold-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-semibold-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-semibold-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-semibold-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-bold-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-bold-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-bold-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../assets/fonts/open-sans/opensans-bolditalic-webfont.eot");
+  src: url("../assets/fonts/open-sans/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/open-sans/opensans-bolditalic-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Glyphs';
+  src: url("../assets/fonts/fontawesome/fontawesome-webfont.eot");
+  src: url("../assets/fonts/fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/fontawesome/fontawesome-webfont.woff2") format("woff2"), url("../assets/fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("../assets/fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("../assets/fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* => Nom du site
+ *
+ * /sass/settings/_sizes.scss - Global sizes variables
+ *
+ * coded by Mucht
+ */
+/* 960 px / 12 */
+/* => Nom du site
+ *
+ * /sass/settings/_colors.scss - Global colors variables
+ *
+ * coded by Mucht
+ */
+.hidden {
+  position: absolute;
+  text-indent: -100%; }
+
+.clear {
+  clear: both; }
+
+.clear::after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+/* => Nom du site
+ *
+ * /sass/generic/_meyer-reset.scss - Eric Meyer's CSS reset - http://meyerweb.com/eric/tools/css/reset/
+ *
+ * coded by Mucht
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* => Nom du site
+ *
+ * /sass/generic/_box-sizing.scss - box-sizing reset
+ *
+ * coded by Mucht
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* Sophie Minet
+  *
+  * /sass/base/_root.scss - Base styles for root element
+  *
+  * coded by Mucht
+  */
+html {
+  min-width: 320px;
+  background-color: #FFF;
+  color: #0b3c7f;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-size: 18px;
+  margin: 4.444444444em 0 0 0; }
+
+a {
+  text-decoration: none;
+  color: #0b3c7f; }
+
+/* Sophie Minet
+ *
+ * /sass/objects/_header.scss - Non Esthetic style for header
+ *
+ * coded by Mathieu Claessens
+ */
+.header {
+  margin-bottom: 4.444444444em; }
+  .header__main-title {
+    margin-left: 8.333333333%; }
+  .header__secondary-title {
+    margin-left: 8.333333333%; }
+  .header__sub-title {
+    margin-left: 8.333333333%; }
+  .header__secondary-title, .header__sub-title {
+    margin-right: 8.333333333%; }
+
+/* Sophie Minet
+ *
+ * /sass/objects/_mainNav.scss - Non Esthetic style for mainNav
+ *
+ * coded by Mathieu Claessens
+ */
+.main-nav {
+  width: 100%;
+  z-index: 1000; }
+
+/* Sophie Minet
+ *
+ * /sass/objects/_section.scss - Non Esthetic style for section
+ *
+ * coded by Mathieu Claessens
+ */
+.section__title {
+  margin-bottom: 4.166666667%; }
+
+.section__intro {
+  max-width: 50%; }
+
+.section__introWrap {
+  width: 100%; }
+
+.section__list-elt {
+  width: 50%;
+  margin: 1em 0 0 10%; }
+
+.section__list-elt + .section__list-elt {
+  margin-left: 30%; }
+
+.section__list-elt + .section__list-elt + .section__list-elt {
+  margin-left: 50%; }
+
+.section-center__introWrap {
+  margin-bottom: 5%; }
+
+.section-center__title, .section-center__intro {
+  margin-left: 50%; }
+
+@media all and (max-width: 810px) {
+  .section__intro {
+    max-width: 100%; }
+  .section__list-elt {
+    width: 70%; }
+  .section__list-elt + .section__list-elt {
+    margin-left: 20%; }
+  .section__list-elt + .section__list-elt + .section__list-elt {
+    margin-left: 30%; }
+  .section-center__intro, .section-center__title {
+    margin-left: 0; } }
+
+@media all and (max-width: 500px) {
+  .section__list-elt {
+    width: auto; }
+  .section__list-elt + .section__list-elt {
+    margin-left: 10%; }
+  .section__list-elt + .section__list-elt + .section__list-elt {
+    margin-left: 10%; } }
+
+/* Sophie Minet
+ *
+ * /sass/objects/_contact.scss - Non Esthetic style for contact section
+ *
+ * coded by Mathieu Claessens
+ */
+.contact__wrap {
+  width: 40%; }
+
+.contact__form {
+  width: 50%; }
+
+.contact__fieldset {
+  margin-bottom: 1em; }
+
+.contact__input, .contact__textarea {
+  width: 100%;
+  margin: 0; }
+
+.contact__submit {
+  width: 100%; }
+
+@media all and (max-width: 810px) {
+  .contact__wrap {
+    width: 100%;
+    margin-bottom: 4.444444444em; }
+  .contact__form {
+    width: 100%; } }
+
+@media all and (max-width: 610px) {
+  .contact__wrap {
+    width: auto;
+    margin-bottom: 4.444444444em; } }
+
+/* Sophie Minet
+ *
+ * /sass/objects/_footer.scss - Non Esthetic style for footer elements
+ *
+ * coded by Mathieu Claessens
+ */
+.footer {
+  margin-bottom: 2.222222em; }
+
+/* Sophie Minet
+ *
+ * /sass/components/_header.scss - Esthetic style for header
+ *
+ * coded by Mathieu Claessens
+ */
+.header {
+  font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .header__main-title {
+    font-size: 50px;
+    font-weight: bold; }
+  .header__secondary-title {
+    padding-top: 0.5em;
+    font-size: 40px;
+    text-align: right; }
+  .header__sub-title {
+    padding-top: 1em;
+    font-size: 20px;
+    text-align: right; }
+
+@media all and (max-width: 400px) {
+  .header__main-title {
+    font-size: 40px; }
+  .header__secondary-title {
+    font-size: 25px; }
+  .header__sub-title {
+    font-size: 16px; } }
+
+/* Sophie Minet
+ *
+ * /sass/components/_mainNav.scss - Esthetic style for mainNav
+ *
+ * coded by Mathieu Claessens
+ */
+.main-nav {
+  position: sticky;
+  top: 0;
+  left: 0; }
+  .main-nav__list {
+    background-color: #0b3c7f;
+    padding: 0.5em;
+    text-align: center;
+    transition: 0.2s ease-in-out; }
+  .main-nav__list-elt {
+    padding: 1em;
+    display: inline-block; }
+  .main-nav__link {
+    font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #FFF;
+    transition: 0.2s ease-in-out; }
+    .main-nav__link:hover {
+      color: #b3d6ff;
+      border-bottom: 1px solid #b3d6ff; }
+  .main-nav__label {
+    display: block;
+    color: transparent;
+    width: 50px;
+    height: 50px; }
+  .main-nav__label::before {
+    content: "";
+    font-size: 35px;
+    font-family: "Glyphs";
+    color: #FFF;
+    display: block;
+    padding: 0.25em;
+    width: 50px;
+    height: 50px;
+    background-color: #0b3c7f;
+    transition: 0.2s ease-in-out;
+    cursor: pointer; }
+  .main-nav__input, .main-nav__label {
+    display: none; }
+
+@media all and (max-width: 675px) {
+  .main-nav {
+    width: 190px;
+    position: fixed;
+    top: 0;
+    right: 0; }
+    .main-nav__list {
+      max-width: 0;
+      padding: 0;
+      overflow: hidden; }
+    .main-nav__list-elt {
+      display: block; }
+    .main-nav__input {
+      position: absolute;
+      left: -100%; }
+    .main-nav__label {
+      display: block; }
+    .main-nav__input:checked ~ .main-nav__list {
+      padding: 0.5em;
+      max-width: 190px; }
+    .main-nav__input:checked ~ .main-nav__label::before {
+      width: 190px;
+      content: ""; } }
+
+/* Sophie Minet
+ *
+ * /sass/components/_section.scss - Esthetic style for section
+ *
+ * coded by Mathieu Claessens
+ */
+.section {
+  padding: 4.444444444em 8.333333333%;
+  line-height: 1.777777778; }
+  .section--even {
+    background-color: #b3d6ff; }
+  .section__title {
+    font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold; }
+  .section__introWrap {
+    overflow: hidden; }
+  .section__img--who, .section__img--sessions {
+    float: right; }
+  .section__img--eval, .section__img--sup {
+    float: left; }
+  .section__intro + .section__intro {
+    padding-top: 1em; }
+  .section__list-title {
+    font-size: 20px;
+    font-weight: bold; }
+  .section__list-elt-title {
+    font-weight: bold; }
+
+@media all and (max-width: 975px) {
+  .section__img {
+    position: absolute; }
+    .section__img--who, .section__img--sessions {
+      right: 0; }
+    .section__img--eval, .section__img--sup {
+      left: 0; } }
+
+@media all and (max-width: 810px) {
+  .section {
+    padding: 8.333333333% 16.666666667%; }
+    .section__img {
+      display: none; } }
+
+@media all and (max-width: 750px) {
+  .section {
+    padding: 8.333333333%; } }
+
+/* Sophie Minet
+ *
+ * /sass/components/_contact.scss - Esthetic style for contact section
+ *
+ * coded by Mathieu Claessens
+ */
+.contact__wrap {
+  float: left; }
+
+.contact__adress {
+  padding-bottom: 1em; }
+
+.contact__title {
+  font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold; }
+
+.contact__adress-line {
+  padding-left: 4.166666667%; }
+
+.contact__mail::before {
+  font-family: "Glyphs";
+  content: '';
+  padding-right: 1.2em; }
+
+.contact__phone::before {
+  font-family: "Glyphs";
+  content: '';
+  padding-right: 1.2em; }
+
+.contact__form {
+  float: right; }
+
+.contact__fieldset {
+  position: relative;
+  font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px; }
+
+.contact__label {
+  position: absolute;
+  top: 0.3em;
+  font-weight: bold;
+  padding-left: 0.5em; }
+
+.contact__input, .contact__textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #0b3c7f;
+  border-left: 2px solid #0b3c7f;
+  font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  padding: 0.5em;
+  padding-left: 4.444444444em; }
+
+.contact__input:focus, .contact__textarea:focus {
+  background-color: #b3d6ff; }
+
+.contact__textarea {
+  resize: vertical;
+  padding-left: 0.5em;
+  padding-top: 2.5em; }
+
+.contact__submit {
+  font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #0b3c7f;
+  border: none;
+  padding: 0.3em;
+  transition: 0.2s ease-in-out; }
+
+.contact__submit:hover {
+  color: #b3d6ff; }
+
+.contact__success {
+  font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: green; }
+
+.contact__error {
+  padding-left: 0.5em;
+  font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: red; }
+
+@media all and (max-width: 810px) {
+  .contact__adress {
+    float: left; }
+  .contact__adress + .contact__adress {
+    float: right; } }
+
+@media all and (max-width: 610px) {
+  .contact__wrap {
+    float: none;
+    display: inline-block; }
+  .contact__adress {
+    float: none; }
+  .contact__adress + .contact__adress {
+    float: none; } }
+
+/* Sophie Minet
+ *
+ * /sass/components/_footer.scss - Esthetic style for footer elements
+ *
+ * coded by Mathieu Claessens
+ */
+.footer {
+  text-align: center;
+  padding: 0 8.333333333%; }
+  .footer__copy {
+    font-size: 12px;
+    font-family: "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #63a4ff; }
+  .footer__copy-link {
+    color: #63a4ff; }
+
+/*# sourceMappingURL=styles.css.map */

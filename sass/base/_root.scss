@@ -1,0 +1,20 @@
+ /* Sophie Minet
+  *
+  * /sass/base/_root.scss - Base styles for root element
+  *
+  * coded by Mucht
+  */
+
+html{
+    min-width: 320px;
+    background-color: $mainBcgColor;
+    color: $mainColor;
+    font-family: $timesNewRomanStack;
+    font-size: 18px;
+    margin: 4.444444444em 0 0 0;
+}
+
+a{
+    text-decoration: none;
+    color: $mainColor;
+}

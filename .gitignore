@@ -1,0 +1,8 @@
+node_modules
+js
+FTP-files
+Gruntfile.js
+package.json
+.eslintrc.json
+assets
+assetsDev

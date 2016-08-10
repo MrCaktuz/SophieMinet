@@ -1,0 +1,39 @@
+/* => Nom du site
+ *
+ * /sass/settings/_colors.scss - Global colors variables
+ *
+ * coded by Mucht
+ */
+
+/*---------------------------------------*/
+/*--------------- Colors ----------------*/
+/*---------------------------------------*/
+$colorOne: #FFF;
+$colorTwo: #b3d6ff;
+$colorThree: #63a4ff;
+$colorFour: #0b3c7f;
+
+/*---------------------------------------*/
+/*------------ Backgrounds --------------*/
+/*---------------------------------------*/
+$mainBcgColor: $colorOne;
+$evenSectionBcgColor: $colorTwo;
+$navBcgColor: $colorFour;
+$formBcgFocus: $colorTwo;
+$buttonBcgColor: $colorFour;
+
+/*---------------------------------------*/
+/*------------ Text colors --------------*/
+/*---------------------------------------*/
+$mainColor: $colorFour;
+$navColor: $colorOne;
+$copyColor: $colorThree;
+$buttonColor: $colorOne;
+$hoverColor: $colorTwo;
+$errorColor: red;
+$successColor: green;
+
+/*---------------------------------------*/
+/*---------- element colors -------------*/
+/*---------------------------------------*/
+$borderColor: $colorFour;

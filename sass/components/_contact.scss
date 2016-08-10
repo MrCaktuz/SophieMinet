@@ -1,0 +1,123 @@
+/* Sophie Minet
+ *
+ * /sass/components/_contact.scss - Esthetic style for contact section
+ *
+ * coded by Mathieu Claessens
+ */
+.contact{
+    &__wrap{
+        float: left;
+    }
+    &__adress{
+        padding-bottom: 1em;
+    }
+    &__title{
+        font-family: $openSansStack;
+        font-weight: bold;
+    }
+    &__adress-line{
+        padding-left: $halfCol;
+    }
+    &__mail::before{
+        font-family: $glyphs;
+        content: '';
+        padding-right: 1.2em;
+    }
+    &__phone::before{
+        font-family: $glyphs;
+        content: '';
+        padding-right: 1.2em;
+    }
+    &__form{
+        float: right;
+    }
+    &__fieldset{
+        position: relative;
+        font-family: $openSansStack;
+        font-size: 18px;
+    }
+    &__label{
+        position: absolute;
+        top: 0.3em;
+        font-weight: bold;
+        padding-left: 0.5em;
+    }
+    &__input, &__textarea{
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid $borderColor;
+        border-left: 2px solid $borderColor;
+        font-family: $openSansStack;
+        font-size: 18px;
+        padding: 0.5em;
+        padding-left: 4.444444444em; // 80px
+    }
+    &__input:focus, &__textarea:focus{
+        background-color: $formBcgFocus;
+    }
+    &__textarea{
+        resize: vertical;
+        padding-left: 0.5em;
+        padding-top: 2.5em;
+    }
+    &__submit{
+        font-family: $openSansStack;
+        font-size: 20px;
+        color: $buttonColor;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: $buttonBcgColor;
+        border: none;
+        padding: 0.3em;
+        transition: 0.2s ease-in-out;
+    }
+    &__submit:hover{
+        color: $hoverColor;
+    }
+    &__success{
+        font-family: $openSansStack;
+        font-size: 16px;
+        text-align: center;
+        color: $successColor;
+    }
+    &__error{
+        padding-left: 0.5em;
+        font-family: $openSansStack;
+        font-size: 16px;
+        color: $errorColor;
+    }
+}
+
+// ===== media query =====
+
+@media all and (max-width: 810px) {
+    .contact{
+        &__adress{
+            float: left;
+        }
+        &__adress + &__adress{
+            float: right;
+        }
+    }
+}
+
+@media all and (max-width: 610px) {
+    .contact{
+        &__wrap{
+            float: none;
+            display: inline-block;
+        }
+        &__adress{
+            float: none;
+        }
+        &__adress + &__adress{
+            float: none;
+        }
+    }
+}
+
+@media all and (max-width: 400px) {
+    .contact{
+
+    }
+}

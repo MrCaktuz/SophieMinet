@@ -1,0 +1,75 @@
+/* Sophie Minet
+ *
+ * /sass/objects/_section.scss - Non Esthetic style for section
+ *
+ * coded by Mathieu Claessens
+ */
+
+.section{
+    &__title{
+        margin-bottom: $halfCol;
+    }
+    &__intro{
+        max-width: 50%; //400/800*100
+    }
+    &__introWrap{
+        width: 100%;
+    }
+    &__list-elt{
+        width: 50%; // 400/800*100
+        margin: 1em 0 0 10%; // 80/800*100
+    }
+    &__list-elt + &__list-elt{
+        margin-left: 30%; //240/800*100
+    }
+    &__list-elt + &__list-elt + &__list-elt{
+        margin-left: 50%; //400/800*100
+    }
+}
+
+.section-center{
+    &__introWrap{
+        margin-bottom: 5%; // 40/800*100
+    }
+    &__title, &__intro{
+        margin-left: 50%; // 400/800*100
+    }
+}
+
+// ===== media query =====
+
+@media all and (max-width: 810px) {
+    .section{
+        &__intro{
+            max-width: 100%;
+        }
+        &__list-elt{
+            width: 70%; // 560/800*100
+        }
+        &__list-elt + &__list-elt{
+            margin-left: 20%; //160/800*100
+        }
+        &__list-elt + &__list-elt + &__list-elt{
+            margin-left: 30%; //240/800*100
+        }
+    }
+    .section-center{
+        &__intro, &__title{
+            margin-left: 0;
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .section{
+        &__list-elt{
+            width: auto;
+        }
+        &__list-elt + &__list-elt{
+            margin-left: 10%;
+        }
+        &__list-elt + &__list-elt + &__list-elt{
+            margin-left: 10%;
+        }
+    }
+}

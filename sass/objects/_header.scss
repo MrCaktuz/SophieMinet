@@ -1,0 +1,22 @@
+/* Sophie Minet
+ *
+ * /sass/objects/_header.scss - Non Esthetic style for header
+ *
+ * coded by Mathieu Claessens
+ */
+
+.header{
+    margin-bottom: 4.444444444em; // 80px
+    &__main-title{
+        margin-left: $oneCol;
+    }
+    &__secondary-title{
+        margin-left: $oneCol;
+    }
+    &__sub-title{
+        margin-left: $oneCol;
+    }
+    &__secondary-title, &__sub-title{
+        margin-right: $oneCol;
+    }
+}

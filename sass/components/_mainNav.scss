@@ -1,0 +1,85 @@
+/* Sophie Minet
+ *
+ * /sass/components/_mainNav.scss - Esthetic style for mainNav
+ *
+ * coded by Mathieu Claessens
+ */
+
+.main-nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    &__list{
+        background-color: $navBcgColor;
+        padding: 0.5em;
+        text-align: center;
+        transition: 0.2s ease-in-out;
+    }
+    &__list-elt{
+        padding: 1em;
+        display: inline-block;
+    }
+    &__link{
+        font-family: $openSansStack;
+        color: $navColor;
+        transition: 0.2s ease-in-out;
+        &:hover{
+            color: $hoverColor;
+            border-bottom: 1px solid $colorTwo;
+        }
+    }
+    &__label{
+        display: block;
+        color: transparent;
+        width: 50px;
+        height: 50px;
+    }
+    &__label::before{
+        content: "";
+        font-size: 35px;
+        font-family: $glyphs;
+        color: $navColor;
+        display: block;
+        padding: 0.25em;
+        width: 50px;
+        height: 50px;
+        background-color: $navBcgColor;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+    }
+    &__input, &__label{
+        display: none;
+    }
+}
+
+@media all and (max-width: 675px) {
+    .main-nav{
+        width: 190px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        &__list{
+            max-width: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        &__list-elt{
+            display: block;
+        }
+        &__input{
+            position: absolute;
+            left: -100%;
+        }
+        &__label{
+            display: block;
+        }
+        &__input:checked ~ &__list{
+            padding: 0.5em;
+            max-width: 190px;
+        }
+        &__input:checked ~ &__label::before{
+            width: 190px;
+            content: "";
+        }
+    }
+}

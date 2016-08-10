@@ -1,0 +1,33 @@
+/* => Nom du site
+ *
+ * /sass/settings/_colors.scss - Global colors variables
+ *
+ * coded by Mucht
+ */
+
+//grid
+// html{
+//     background-image: url(../assets/img/grid.png);
+//     background-repeat: repeat-y;
+//     background-position: center;
+// }
+//
+// body{
+//     opacity: 0.5;
+// }
+
+//hidden content
+.hidden{
+    position: absolute;
+    text-indent: -100%;
+}
+
+//clear float
+.clear{
+    clear: both;
+}
+.clear::after{
+    content: " ";
+    display: table;
+    clear: both;
+}

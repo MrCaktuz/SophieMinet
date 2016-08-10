@@ -1,0 +1,71 @@
+/* Sophie Minet
+ *
+ * /sass/components/_section.scss - Esthetic style for section
+ *
+ * coded by Mathieu Claessens
+ */
+
+.section{
+    padding: 4.444444444em $oneCol;
+    line-height: 1.777777778;
+    &--even{
+        background-color: $evenSectionBcgColor;
+    }
+    &__title{
+        font-family: $openSansStack;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    &__introWrap{
+        overflow: hidden;
+    }
+    &__img{
+        &--who, &--sessions{
+            float: right;
+        }
+        &--eval, &--sup{
+            float: left;
+        }
+    }
+    &__intro+&__intro{
+        padding-top: 1em;
+    }
+    &__list-title{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    &__list-elt-title{
+        font-weight: bold;
+    }
+}
+
+// ===== media query =====
+
+@media all and (max-width: 975px) {
+    .section{
+        &__img{
+            position: absolute;
+            &--who, &--sessions{
+                right: 0;
+            }
+            &--eval, &--sup{
+                left: 0;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 810px) {
+    .section{
+        padding: $oneCol $twoCol;
+        &__img{
+            display: none;
+        }
+    }
+}
+
+@media all and (max-width: 750px) {
+    .section{
+        padding: $oneCol;
+    }
+}
